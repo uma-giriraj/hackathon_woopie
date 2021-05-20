@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woopie Login Template</title>
+    <meta name="author" content="David Grzyb">
+    <meta name="description" content="">
+
+    
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+        .font-family-karla {
+            font-family: karla;
+        }
+        p{
+            font-family: "Verdana";
+        }
+        #screen{
+    background-image: url("https://i0.wp.com/gorgeouslyvegan.co.uk/wp-content/uploads/2017/02/123-sfondo-ok.jpeg?ssl=1");
+    background-size: 1000px 1000px;
+    animation-name: horror;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+  }
+        @keyframes horror{
+    0%{
+      background-image: url("https://wallpapertag.com/wallpaper/full/b/9/f/482012-strawberry-shortcake-backgrounds-2560x1440-for-mobile-hd.jpg");
+
+     
+    }
+    30%{
+      background-image: url("https://www.basware.com/getmedia/e0b934eb-b9d6-442c-9da5-ad25b92c9794/Evergreen-A-Perfect-e-Procurement")
+    }
+      50%{
+      background-image: url("https://cdn.hipwallpaper.com/i/64/35/RSgH92.jpg");
+    }
+  }
+    </style>
+</head>
+<body id="screen" class="bg-white font-family-karla h-screen">
+
+    <div class="w-full flex flex-wrap">
+
+        <!-- Login Section -->
+        <div class="w-full md:w-1/2 flex flex-col">
+
+            <div class="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
+                <a style="font-family:papyrus" href="#" class="bg-black text-white font-bold text-xl p-4">woopie</a>
+         
+              
+            </div>
+<br></br>
+            <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
+                <p class="text-center text-3xl"><b>little one step!</b></p>
+                <form class="flex flex-col pt-3 md:pt-8" onsubmit="event.preventDefault();">
+                    <div class="flex flex-col pt-4">
+                        <label for="email" class="text-lg">Email</label>
+                        <input type="email" id="email" placeholder="your@email.com" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+    
+                    <div class="flex flex-col pt-4">
+                        <label for="password" class="text-lg">Password</label>
+                        <input type="password" id="password" placeholder="Password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+    
+                    <input type="submit" value="Log In" class="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8">
+                </form>
+                <div class="text-center pt-12 pb-12">
+                    <p>Don't have an account? <a href="register.html" class="underline font-semibold">Register here.</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Image Section -->
+        <div class="w-1/2 shadow-2xl">
+            <img class="object-cover w-full h-screen hidden md:block" src="https://thumbs.dreamstime.com/b/seniors-enjoy-computer-5033433.jpg">
+        </div>
+ 
+    </div>
+
+</body>
+</html>
